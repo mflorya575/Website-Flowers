@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог - 1 уроверь
+        </a>
+        <a href="catalog2.html" style="display: block; margin-bottom: 20px;">
+            Каталог - 2 уроверь
+        </a>
+        <a href="search.html" style="display: block; margin-bottom: 20px;">
+            Результаты поиска
+        </a>
+        <a href="search-empty.html" style="display: block; margin-bottom: 20px;">
+            Результаты поиска - Нет результатов
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
+        <a href="catalog-item2 .html" style="display: block; margin-bottom: 20px;">
+            Карточка товара (Форма отзывов отправлена)
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О магазине
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Наши контакты
+        </a>
+        <a href="contacts2.html" style="display: block; margin-bottom: 20px;">
+            Наши контакты (Форма отправлена)
+        </a>
+        <a href="contacts3.html" style="display: block; margin-bottom: 20px;">
+            Наши контакты (Ошибка в форме)
+        </a>
+        <a href="blog.html" style="display: block; margin-bottom: 20px;">
+            Блог
+        </a>
+        <a href="blog-item.html" style="display: block; margin-bottom: 20px;">
+            Блог - Полная запись
+        </a>
+        <a href="delivery.html" style="display: block; margin-bottom: 20px;">
+            Доставка и оплата
+        </a>
+        <a href="reviews.html" style="display: block; margin-bottom: 20px;">
+            Отзывы
+        </a>
+        <a href="reviews2.html" style="display: block; margin-bottom: 20px;">
+            Отзывы (Форма отправлена)
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина
+        </a>
+        <a href="cart2.html" style="display: block; margin-bottom: 20px;">
+            Корзина (Промокод - успешен)
+        </a>
+        <a href="cart3.html" style="display: block; margin-bottom: 20px;">
+            Корзина (Промокод - ошибка)
+        </a>
+        <a href="cart-empty.html" style="display: block; margin-bottom: 20px;">
+            Корзина (Пусто)
+        </a>
+        <a href="order.html" style="display: block; margin-bottom: 20px;">
+            Оформление заказа
+        </a>
+        <a href="order-success.html" style="display: block; margin-bottom: 20px;">
+            Спасибо за заказ
+        </a>
+        <a href="order-success2.html" style="display: block; margin-bottom: 20px;">
+            Спасибо за заказ - Самовывоз
+        </a>
+
+
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            Авторизация
+        </a>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Регистрация
+        </a>
+        <a href="reg2.html" style="display: block; margin-bottom: 20px;">
+            Регистрация (Вывод ошибок)
+        </a>
+        <a href="pass-recover.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля
+        </a>
+        <a href="pass-recover2.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля 2
+        </a>
+
+        <a href="profile.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Профиль
+        </a>
+        <a href="profile2.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Нет заказов
+        </a>
+        <a href="profile-edit.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Редактирование профиля
+        </a>
+        <a href="profile-edit2.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Редактирование профиля (ошибка)
+        </a>
+        <a href="orders.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - История заказов
+        </a>
+        <a href="order-item.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - История заказов - Страница одного заказа
+        </a>
+        <a href="address.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Мой адрес
+        </a>
+        <a href="address-edit.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Редактирование адреса
+        </a>
+        <a href="address2.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Адреса нет
+        </a>
+        <a href="password-change.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Смена пароля
+        </a>
+        <a href="password-change2.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет - Смена пароля <успех></успех>
+        </a>
+        <a href="favourite.html" style="display: block; margin-bottom: 20px;">
+            Избранные товары
+        </a>
+        <a href="favourite-empty.html" style="display: block; margin-bottom: 20px;">
+            Избранные товары - Нет товарова
+        </a>
+        <a href="conf.html" style="display: block; margin-bottom: 20px;">
+            Политика конфиденциальности
+        </a>
+
+
+
+
+        <button data-modal="orderModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Быстрый заказ товара:
+        </button>
+        <button data-modal="thankModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Спасибо!
+        </button>
+
+    </div>
+
+
+    <!--  -->
+    <div class="modal" id="orderModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text43">
+                    Быстрый заказ товара:
+                </div>
+                <div class="text19 text17-tablet">
+                    Букет премиальных красных роз
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <label>
+                        Ваше имя <span>*</span>:
+                    </label>
+                    <input type="text" placeholder="Как к вам обращаться?">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Номер телефона <span>*</span>:
+                    </label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                </fieldset>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-black">
+                        <span>Отправить</span>
+                    </button>
+                </div>
+                <div class="m-check ">
+                    <input @@checked type="checkbox">
+                    <label><span>Согласен с обработкой персональных данных в соответствии с <a href=''>политикой конфиденциальности</a></span></label>
+                </div>
+
+            </form>
+            <button class="modal__close _close-modal">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.7" d="M1 31L30.997 1M31 31L1.00302 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal thank-modal" id="thankModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text43">
+                    Спасибо!
+                </div>
+                <div class="modal__text text16">
+                    Мы получили вашу заявку. Мы свяжемся с вами в ближайшее время по указанным контактам.
+                </div>
+            </div>
+            <div class="modal-form__nav">
+                <button class="_close-modal m-btn m-btn-black">
+                    <span>Закрыть</span>
+                </button>
+            </div>
+            <button class="modal__close _close-modal">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.7" d="M1 31L30.997 1M31 31L1.00302 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="cookie-modal _active">
+        <div class="container">
+            <div class="cookie-modal__inner">
+                <div class="cookie-modal__content">
+                    <div class="cookie-modal__title text19 text17-tablet">
+                        Сайт использует Cookie
+                    </div>
+                    <div class="cookie-modal__desc">
+                        Используя данный сайт, вы даете согласие на использование файлов cookie, данных об IP-адресе и местоположении, помогающих нам сделать его удобнее для вас.
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cookie-modal__nav">
+                    <button class="cookie-modal__btn m-btn _small m-btn-black-outline">
+                        <span>Принять и закрыть</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-modal">
+        <div class="search-modal__bg _toggle-search"></div>
+        <div class="search-modal__dialog">
+            <fieldset class="search-field fg">
+                <input type="text">
+                <div class="fake-placeholder text16">
+                    <span class="_view1">Начните вводить запрос. Например “<b>букет роз</b>”</span>
+                    <span class="_view2">Начните вводить запрос</span>
+                </div>
+                <button class="search-field__find">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.25 10.8333C3.25 11.8292 3.44615 12.8153 3.82725 13.7353C4.20835 14.6554 4.76693 15.4914 5.47111 16.1956C6.17528 16.8997 7.01126 17.4583 7.93132 17.8394C8.85137 18.2205 9.83748 18.4167 10.8333 18.4167C11.8292 18.4167 12.8153 18.2205 13.7353 17.8394C14.6554 17.4583 15.4914 16.8997 16.1956 16.1956C16.8997 15.4914 17.4583 14.6554 17.8394 13.7353C18.2205 12.8153 18.4167 11.8292 18.4167 10.8333C18.4167 9.83748 18.2205 8.85137 17.8394 7.93132C17.4583 7.01126 16.8997 6.17528 16.1956 5.47111C15.4914 4.76693 14.6554 4.20834 13.7353 3.82725C12.8153 3.44615 11.8292 3.25 10.8333 3.25C9.83748 3.25 8.85137 3.44615 7.93132 3.82725C7.01126 4.20834 6.17528 4.76693 5.47111 5.47111C4.76693 6.17528 4.20835 7.01126 3.82725 7.93132C3.44615 8.85137 3.25 9.83748 3.25 10.8333Z" stroke="#373431" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.5833 20.5833L16.25 16.25" stroke="#373431" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </fieldset>
+
+            <div class="search-modal__items">
+                <div class="search-card">
+                    <div class="container">
+                        <div class="search-card__inner">
+                            <a href="" class="search-card__img _scale-hover">
+                                <img src="img/search.webp" alt="">
+                            </a>
+                            <div class="search-card__content">
+                                <div class="search-card__info">
+                                    <a href="" class="text19 text17-tablet">Букет из трех гортензий</a>
+                                </div>
+                                <div class="search-card__nums">
+                                    <div class="product-card__price semi-bold-text">
+                                        <span class="text18 text15-tablet">3 490 ₽</span>
+                                    </div>
+                                    <div class="product-card__price2 medium-text">
+                                        <span class="text16 text13-tablet">3 890 ₽</span>
+                                    </div>
+                                    <div class="m-badge">
+                                        <span>-20%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="search-card__action">
+                                <a href="" class="m-btn m-btn-black-outline _small">
+                                    <span>Перейти</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-card">
+                    <div class="container">
+                        <div class="search-card__inner">
+                            <a href="" class="search-card__img _scale-hover">
+                                <img src="img/search2.webp" alt="">
+                            </a>
+                            <div class="search-card__content">
+                                <div class="search-card__info">
+                                    <a href="" class="text19 text17-tablet">Коробка цветов “For you”</a>
+                                </div>
+                                <div class="search-card__nums">
+                                    <div class="product-card__price semi-bold-text">
+                                        <span class="text18 text15-tablet">3 490 ₽</span>
+                                    </div>
+                                    <div class="product-card__price2 medium-text">
+                                        <span class="text16 text13-tablet">3 890 ₽</span>
+                                    </div>
+                                    <div class="m-badge">
+                                        <span>-20%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="search-card__action">
+                                <a href="" class="m-btn m-btn-black-outline _small">
+                                    <span>Перейти</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-card">
+                    <div class="container">
+                        <div class="search-card__inner">
+                            <a href="" class="search-card__img _scale-hover">
+                                <img src="img/search3.webp" alt="">
+                            </a>
+                            <div class="search-card__content">
+                                <div class="search-card__info">
+                                    <a href="" class="text19 text17-tablet">Нежный букет из тюльпанов</a>
+                                </div>
+                                <div class="search-card__nums">
+                                    <div class="product-card__price semi-bold-text">
+                                        <span class="text18 text15-tablet">3 490 ₽</span>
+                                    </div>
+                                    <div class="product-card__price2 medium-text">
+                                        <span class="text16 text13-tablet">3 890 ₽</span>
+                                    </div>
+                                    <div class="m-badge">
+                                        <span>-20%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="search-card__action">
+                                <a href="" class="m-btn m-btn-black-outline _small">
+                                    <span>Перейти</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a href="" class="search-modal__link m-btn">
+                <span>Все результаты (192)</span>
+            </a>
+        </div>
+        <button class="search-modal__close _toggle-search">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.7" d="M1 31L30.997 1M31 31L1.00302 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
